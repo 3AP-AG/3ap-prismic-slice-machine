@@ -15,6 +15,9 @@ const JumboTron = ({ slice }) => (
         section {
           color: #fff;
           background-color: #161615;
+          min-height: 250px;
+          padding-top: 2rem;
+          margin-bottom: 2rem;
         }
         .jumbotron {
           margin: auto;

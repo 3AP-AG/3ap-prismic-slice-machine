@@ -15,6 +15,7 @@ const Page = ({ page, navigation, settings }) => {
           {prismicH.asText(settings.data.siteTitle)}
         </title>
       </Head>
+
       <SliceZone slices={page.data.slices} components={components} />
     </Layout>
   );

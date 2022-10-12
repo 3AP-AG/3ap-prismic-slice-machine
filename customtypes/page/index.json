@@ -39,10 +39,10 @@
             "jumbo_tron": {
               "type": "SharedSlice"
             },
-            "service": {
+            "testimonial": {
               "type": "SharedSlice"
             },
-            "testimonial": {
+            "call_to_action": {
               "type": "SharedSlice"
             }
           }

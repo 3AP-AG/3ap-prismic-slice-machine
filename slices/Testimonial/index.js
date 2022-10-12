@@ -5,11 +5,7 @@ const Testimonial = ({ slice }) => (
   <section>
     <div className="testimonial">
       <div className="reviewer">
-        <div className="image">
-          {
-            <img src={slice.primary.image.url} alt={slice.primary.image.alt} />
-          }
-        </div>
+        <img className="image" src={slice.primary.image.url} alt={slice.primary.image.alt} />
         <div className="name">
           <PrismicRichText field={slice.primary.name} />
         </div>
@@ -25,7 +21,7 @@ const Testimonial = ({ slice }) => (
         section {
           color: #161615;
           background-color: #fff;
-          margin-top: 3rem;
+          margin-top: 5rem;
         }
         .testimonial {
           margin: auto;
@@ -39,6 +35,8 @@ const Testimonial = ({ slice }) => (
         }
         .image {
           margin-bottom: 1rem;
+          border-radius: 9999px;
+          max-width: 200px;
         }
         .name {
           margin-bottom: 1rem;

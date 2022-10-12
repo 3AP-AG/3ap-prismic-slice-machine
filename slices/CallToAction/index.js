@@ -1,8 +1,16 @@
 import React from 'react'
 import { PrismicRichText } from '@prismicio/react'
+import clsx from 'clsx';
+
+const defaultClass = "default";
+const darkModeClass = "darkMode";
 
 const CallToAction = ({ slice }) => (
-  <section>
+  <section className={clsx({
+    [defaultClass]: slice.variation === 'default',
+    [darkModeClass]: slice.variation === 'darkMode',
+  })}>
+
     <div className="callToAction">
       <div className="overline">
         <PrismicRichText field={slice.primary.overline} />
@@ -21,11 +29,16 @@ const CallToAction = ({ slice }) => (
     </div>
     <style jsx>{`
         section {
-          color: #161615;
-          background-color: #fff;
-          //padding-top: 2rem;
           margin-top: 4rem;
           margin-bottom: 4rem;
+        }
+        .default {
+          color: #161615;
+          background-color: #fff;
+        }
+        .darkMode {
+          color: #fff;
+          background-color: #161615;
         }
         .callToAction {
           margin: auto;
@@ -49,8 +62,13 @@ const CallToAction = ({ slice }) => (
           width: 250px;
           height: 50px;
           text-transform: uppercase;
-          border: 1px solid #161615;
           border-radius: 99999px;
+        }
+        .default .catBtn {
+          border: 1px solid #161615;
+        }
+        .darkMode .catBtn {
+          border: 1px solid #fff;
         }
         .catBtn::after {
           content: " -->";

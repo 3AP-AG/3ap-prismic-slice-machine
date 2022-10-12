@@ -1,0 +1,52 @@
+{
+  "id": "testimonial",
+  "type": "SharedSlice",
+  "name": "Testimonial",
+  "description": "Testimonial",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Testimonial",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "name": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Name",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "title",
+            "placeholder": ""
+          }
+        },
+        "quote": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Quote",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

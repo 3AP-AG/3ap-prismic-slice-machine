@@ -5,6 +5,8 @@ import * as prismicH from "@prismicio/helpers";
 import { createClient } from "../prismicio";
 import { components } from "../slices/";
 import { Layout } from "../components/Layout";
+import Link from "next/link";
+import React from "react";
 
 const Index = ({ page, navigation, settings }) => {
   return (
@@ -12,7 +14,9 @@ const Index = ({ page, navigation, settings }) => {
       <Head>
         <title>{prismicH.asText(page.data.title)}</title>
       </Head>
-      <div>Click the 3ap slices link in the nav bar</div>
+      <div style={{margin: "auto", maxWidth: "1024px"}}>
+        <Link href="/3ap-slice"><a>Visit /3ap-slice</a></Link>
+      </div>
       <SliceZone slices={page.data.slices} components={components} />
     </Layout>
   );

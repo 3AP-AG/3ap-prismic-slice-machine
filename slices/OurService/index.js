@@ -6,7 +6,7 @@ const OurService = ({ slice }) => {
     <section>
       <div className="our-services">
         { slice?.items?.map((item, i) => (
-          <div className="service">
+          <div className="service" key={i}>
             <img src={item.icon.url} alt={item.icon.alt} />
             <div className="title"><PrismicRichText field={item.title}/></div>
             <PrismicRichText field={item.keywords} />

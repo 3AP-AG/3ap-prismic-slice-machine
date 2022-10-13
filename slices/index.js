@@ -2,19 +2,16 @@
 
 import CallToAction from './CallToAction';
 import JumboTron from './JumboTron';
-import Service from './Service';
 import Testimonial from './Testimonial';
 
 export {
 	CallToAction,
 	JumboTron,
-	Service,
 	Testimonial,
 };
 
 export const components = {
 	call_to_action: CallToAction,
 	jumbo_tron: JumboTron,
-	service: Service,
 	testimonial: Testimonial,
 };

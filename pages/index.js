@@ -9,13 +9,17 @@ import Link from "next/link";
 import React from "react";
 
 const Index = ({ page, navigation, settings }) => {
+  const onChangeHandler = null;
+
   return (
-    <Layout navigation={navigation} settings={settings}>
+    <Layout navigation={navigation} settings={settings} onChangeHandler={onChangeHandler}>
       <Head>
         <title>{prismicH.asText(page.data.title)}</title>
       </Head>
       <div style={{margin: "auto", maxWidth: "1024px"}}>
-        <Link href="/3ap-slice"><a>Visit /3ap-slice</a></Link>
+        <Link href="/3ap-slice">
+          <a>Visit /3ap-slice</a>
+        </Link>
       </div>
       <SliceZone slices={page.data.slices} components={components} />
     </Layout>

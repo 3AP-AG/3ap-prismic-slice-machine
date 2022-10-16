@@ -3,7 +3,8 @@ import * as prismicH from "@prismicio/helpers";
 
 import { Bounded } from "./Bounded";
 
-export const Header = ({ navigation, settings }) => {
+export const Header = ({ navigation, settings, onChangeHandler }) => {
+
   return (
     <Bounded as="header" yPadding="sm">
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3 leading-none">
@@ -22,6 +23,12 @@ export const Header = ({ navigation, settings }) => {
                 </PrismicLink>
               </li>
             ))}
+            <li>
+              <select name="locale" id="locale" onChange={onChangeHandler}>
+                <option value="en-us">en-us</option>
+                <option value="de-ch">de-ch</option>
+              </select>
+            </li>
           </ul>
         </nav>
       </div>

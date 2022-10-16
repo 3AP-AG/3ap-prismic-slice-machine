@@ -1,0 +1,187 @@
+{
+  "id": "labels",
+  "label": "Labels",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "healthPlusYou": {
+        "type": "Text",
+        "config": {
+          "label": "healthPlusYou",
+          "placeholder": ""
+        }
+      },
+      "scheduleAppointment": {
+        "type": "Text",
+        "config": {
+          "label": "scheduleAppointment",
+          "placeholder": ""
+        }
+      },
+      "search": {
+        "type": "Text",
+        "config": {
+          "label": "search",
+          "placeholder": ""
+        }
+      }
+    },
+    "Home": {
+      "home": {
+        "type": "Group",
+        "config": {
+          "label": "home",
+          "fields": {
+            "greeting": {
+              "type": "Text",
+              "config": {
+                "label": "greeting",
+                "placeholder": ""
+              }
+            },
+            "whatIsGoodForYou": {
+              "type": "Text",
+              "config": {
+                "label": "whatIsGoodForYou",
+                "placeholder": ""
+              }
+            },
+            "whatIsGoodForYouSubtitle": {
+              "type": "Text",
+              "config": {
+                "label": "whatIsGoodForYouSubtitle",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "home_greeting": {
+        "type": "Text",
+        "config": {
+          "label": "home_greeting",
+          "placeholder": ""
+        }
+      }
+    },
+    "Shop": {
+      "shop": {
+        "type": "Group",
+        "config": {
+          "label": "shop",
+          "fields": {
+            "allProducts": {
+              "type": "Text",
+              "config": {
+                "label": "allProducts",
+                "placeholder": ""
+              }
+            },
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "title",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Offers": {
+      "offers": {
+        "type": "Group",
+        "config": {
+          "label": "offers",
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "name",
+                "placeholder": ""
+              }
+            },
+            "description": {
+              "type": "Text",
+              "config": {
+                "label": "description",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Profile": {
+      "profile": {
+        "type": "Group",
+        "config": {
+          "label": "profile",
+          "fields": {
+            "email": {
+              "type": "Text",
+              "config": {
+                "label": "email",
+                "placeholder": ""
+              }
+            },
+            "password": {
+              "type": "Text",
+              "config": {
+                "label": "password",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Menu": {
+      "mainMenu": {
+        "type": "Group",
+        "config": {
+          "label": "mainMenu",
+          "fields": {
+            "offers": {
+              "type": "Text",
+              "config": {
+                "label": "offers",
+                "placeholder": ""
+              }
+            },
+            "gastronomy": {
+              "type": "Text",
+              "config": {
+                "label": "gastronomy",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "profileMenu": {
+        "type": "Group",
+        "config": {
+          "label": "profileMenu",
+          "fields": {
+            "myDates": {
+              "type": "Text",
+              "config": {
+                "label": "myDates",
+                "placeholder": ""
+              }
+            },
+            "myDocuments": {
+              "type": "Text",
+              "config": {
+                "label": "myDocuments",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

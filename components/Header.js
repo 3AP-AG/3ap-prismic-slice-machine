@@ -4,7 +4,6 @@ import * as prismicH from "@prismicio/helpers";
 import { Bounded } from "./Bounded";
 
 export const Header = ({ navigation, settings, onChangeHandler }) => {
-
   return (
     <Bounded as="header" yPadding="sm">
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3 leading-none">

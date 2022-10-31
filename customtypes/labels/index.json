@@ -63,6 +63,20 @@
           "label": "home_greeting",
           "placeholder": ""
         }
+      },
+      "home_whatisgoodforyou": {
+        "type": "Text",
+        "config": {
+          "label": "home_whatIsGoodForYou",
+          "placeholder": ""
+        }
+      },
+      "home_whatisgoodforyousubtitle": {
+        "type": "Text",
+        "config": {
+          "label": "home_whatIsGoodForYouSubtitle",
+          "placeholder": ""
+        }
       }
     },
     "Shop": {
@@ -87,6 +101,28 @@
             }
           }
         }
+      },
+      "productType": {
+        "type": "Group",
+        "config": {
+          "label": "Product Type",
+          "fields": {
+            "productType": {
+              "type": "Text",
+              "config": {
+                "label": "Product Type",
+                "placeholder": ""
+              }
+            },
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            }
+          }
+        }
       }
     },
     "Offers": {
@@ -106,6 +142,36 @@
               "type": "Text",
               "config": {
                 "label": "description",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "offerCategory": {
+        "type": "Group",
+        "config": {
+          "label": "Offer Category",
+          "fields": {
+            "icon": {
+              "type": "Image",
+              "config": {
+                "label": "Icon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "vitabyteCategory": {
+              "type": "Text",
+              "config": {
+                "label": "Vitabyte Category",
+                "placeholder": ""
+              }
+            },
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
                 "placeholder": ""
               }
             }

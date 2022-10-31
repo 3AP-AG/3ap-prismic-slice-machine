@@ -1,0 +1,80 @@
+{
+  "id": "oyupage",
+  "label": "OyuPage",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph"
+        }
+      },
+      "oyuOffers": {
+        "type": "Group",
+        "config": {
+          "label": "OyuOffers",
+          "fields": {
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "select": "document"
+              }
+            },
+            "relationship": {
+              "type": "Link",
+              "config": {
+                "label": "Relationship",
+                "select": "document"
+              }
+            }
+          }
+        }
+      },
+      "oyublogposts": {
+        "type": "Group",
+        "config": {
+          "label": "OyuBlogPosts",
+          "fields": {
+            "relationship": {
+              "type": "Link",
+              "config": {
+                "label": "Relationship",
+                "select": "document"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

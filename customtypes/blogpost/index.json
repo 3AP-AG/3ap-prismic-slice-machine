@@ -1,0 +1,82 @@
+{
+  "id": "blogpost",
+  "label": "Blog post",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": false,
+          "multi": "paragraph"
+        }
+      },
+      "createdAt": {
+        "type": "Date",
+        "config": {
+          "label": "CreatedAt",
+          "placeholder": ""
+        }
+      },
+      "category": {
+        "type": "Select",
+        "config": {
+          "label": "Category",
+          "placeholder": "",
+          "options": [
+            "Blog",
+            "Recipe",
+            "Video",
+            "Podcast"
+          ],
+          "default_value": "Blog"
+        }
+      },
+      "contentrelationships": {
+        "type": "Group",
+        "config": {
+          "label": "Content relationship",
+          "fields": {
+            "author": {
+              "type": "Link",
+              "config": {
+                "label": "Author",
+                "select": "document",
+                "customtypes": [
+                  "blogPostAuthor"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

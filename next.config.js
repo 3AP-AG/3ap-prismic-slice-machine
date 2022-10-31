@@ -8,6 +8,7 @@ const nextConfig = async () => {
 
   const repository = await client.getRepository();
   const locales = repository.languages.map((lang) => lang.id);
+  console.log("Locales", locales);
 
   return {
     reactStrictMode: true,

@@ -26,9 +26,7 @@
         "config": {
           "label": "Parent",
           "select": "document",
-          "customtypes": [
-            "page"
-          ]
+          "customtypes": ["page"]
         }
       },
       "slices": {
@@ -46,6 +44,9 @@
               "type": "SharedSlice"
             },
             "our_service": {
+              "type": "SharedSlice"
+            },
+            "foo_bar": {
               "type": "SharedSlice"
             }
           }

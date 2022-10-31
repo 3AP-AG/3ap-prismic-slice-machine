@@ -11,14 +11,14 @@ const Page = ({ page, navigation, settings }) => {
     <Layout navigation={navigation} settings={settings}>
       <Head>
         <title>
-          {prismicH.asText(page.data.title)} | {" "}
+          {prismicH.asText(page.data.title)} |{" "}
           {prismicH.asText(settings.data.siteTitle)}
         </title>
         <script
-            async
-            defer
-            src="https://static.cdn.prismic.io/prismic.js?new=true&repo=3ap-slice"
-          />
+          async
+          defer
+          src="https://static.cdn.prismic.io/prismic.js?new=true&repo=3ap-slice"
+        />
       </Head>
 
       <SliceZone slices={page.data.slices} components={components} />

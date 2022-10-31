@@ -1,19 +1,19 @@
-import Link from 'next/link'
-import { PrismicLink, PrismicProvider } from '@prismicio/react'
-import { PrismicPreview } from '@prismicio/next'
+import Link from "next/link";
+import { PrismicLink, PrismicProvider } from "@prismicio/react";
+import { PrismicPreview } from "@prismicio/next";
 
-import { repositoryName, linkResolver } from '../prismicio'
-import { Heading } from '../components/Heading'
+import { repositoryName, linkResolver } from "../prismicio";
+import { Heading } from "../components/Heading";
 
-import '../styles/globals.css'
+import "../styles/globals.css";
 
 const NextLinkShim = ({ href, children, locale, ...props }) => {
   return (
     <Link href={href} locale={locale}>
       <a {...props}>{children}</a>
     </Link>
-  )
-}
+  );
+};
 
 const richTextComponents = {
   heading1: ({ children }) => (
@@ -60,7 +60,7 @@ const richTextComponents = {
       {children}
     </PrismicLink>
   ),
-}
+};
 
 export default function App({ Component, pageProps }) {
   return (
@@ -73,5 +73,5 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </PrismicPreview>
     </PrismicProvider>
-  )
+  );
 }

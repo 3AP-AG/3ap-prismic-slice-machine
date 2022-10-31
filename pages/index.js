@@ -12,11 +12,15 @@ const Index = ({ page, navigation, settings }) => {
   const onChangeHandler = null;
 
   return (
-    <Layout navigation={navigation} settings={settings} onChangeHandler={onChangeHandler}>
+    <Layout
+      navigation={navigation}
+      settings={settings}
+      onChangeHandler={onChangeHandler}
+    >
       <Head>
         <title>{prismicH.asText(page.data.title)}</title>
       </Head>
-      <div style={{margin: "auto", maxWidth: "1024px"}}>
+      <div style={{ margin: "auto", maxWidth: "1024px" }}>
         <Link href="/3ap-slice">
           <a>Visit /3ap-slice</a>
         </Link>

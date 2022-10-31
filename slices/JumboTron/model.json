@@ -28,6 +28,14 @@
             "allowTargetBlank": true,
             "single": "paragraph"
           }
+        },
+        "avatar": {
+          "type": "Image",
+          "config": {
+            "label": "avatar",
+            "constraint": {},
+            "thumbnails": []
+          }
         }
       },
       "items": {},

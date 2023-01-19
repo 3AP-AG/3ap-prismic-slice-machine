@@ -33,6 +33,13 @@
           "label": "Last name",
           "placeholder": ""
         }
+      },
+      "number": {
+        "type": "Number",
+        "config": {
+          "label": "number",
+          "placeholder": ""
+        }
       }
     }
   }

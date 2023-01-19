@@ -26,6 +26,35 @@
                 "placeholder": "Link for navigation item",
                 "select": null
               }
+            },
+            "order": {
+              "type": "Text",
+              "config": {
+                "label": "order",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "subgroups": {
+        "type": "Group",
+        "config": {
+          "label": "Subgroups",
+          "fields": {
+            "order": {
+              "type": "Text",
+              "config": {
+                "label": "order",
+                "placeholder": ""
+              }
+            },
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "label",
+                "placeholder": ""
+              }
             }
           }
         }
